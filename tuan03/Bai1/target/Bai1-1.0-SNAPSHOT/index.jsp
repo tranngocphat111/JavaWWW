@@ -167,19 +167,19 @@
         <span style="min-width: 200px">Course applies for</span>
         <div>
             <span>BCA</span>
-            <input type="radio" name="course">
+            <input type="radio" name="course" value="BCA">
         </div>
         <div>
             <span>B.Corn</span>
-            <input type="radio" name="course">
+            <input type="radio" name="course" value="B.Corn">
         </div>
         <div>
             <span>B.Sc</span>
-            <input type="radio" name="course">
+            <input type="radio" name="course" value="B.Sc">
         </div>
         <div>
             <span>B.A</span>
-            <input type="radio" name="course">
+            <input type="radio" name="course" value="B.A">
         </div>
     </div>
 

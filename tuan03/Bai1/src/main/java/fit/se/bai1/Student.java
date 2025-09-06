@@ -8,7 +8,7 @@ public class Student {
     private String lastName;
     private Date dateOfBirth;
     private String email;
-    private String mobilePhong;
+    private String mobileNumber;
     private String gender;
     private String address;
     private String city;
@@ -36,8 +36,8 @@ public class Student {
         return email;
     }
 
-    public String getMobilePhong() {
-        return mobilePhong;
+    public String getMobileNumber() {
+        return mobileNumber;
     }
 
     public String getGender() {
@@ -89,7 +89,7 @@ public class Student {
     }
 
     public void setMobilePhong(String mobilePhong) {
-        this.mobilePhong = mobilePhong;
+        this.mobileNumber = mobilePhong;
     }
 
     public void setGender(String gender) {
@@ -127,12 +127,12 @@ public class Student {
     public Student() {
     }
 
-    public Student(String firstName, String lastName, Date dateOfBirth, String email, String mobilePhong, String gender, String address, String city, String pinCode, String state, String country, List<String> hobbies, String course) {
+    public Student(String firstName, String lastName, Date dateOfBirth, String email, String mobileNumber, String gender, String address, String city, String pinCode, String state, String country, List<String> hobbies, String course) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.email = email;
-        this.mobilePhong = mobilePhong;
+        this.mobileNumber = mobileNumber;
         this.gender = gender;
         this.address = address;
         this.city = city;
