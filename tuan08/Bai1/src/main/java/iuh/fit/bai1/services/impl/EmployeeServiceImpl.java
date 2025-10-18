@@ -19,9 +19,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void delete(Employee employee) {
-        employeeRepository.delete(employee);
+    public void delete(int id) {
+        employeeRepository.deleteById(id);
     }
+
 
     @Override
     public List<Employee> findAll() {
@@ -32,4 +33,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee findByid(int id) {
         return employeeRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public List<Employee> findByName(String keyword) {
+        return employeeRepository.findByFirstNameContainingIgnoreCaseOrLastNameContainingIgnoreCase(keyword, keyword);
+    }
+
 }
